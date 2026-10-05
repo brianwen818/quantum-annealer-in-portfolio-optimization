@@ -1,0 +1,29 @@
+# --- 原始大型資料（只在本機保留；repo 只收錄 data/stocks 與 data/meta） ---
+data/Adjusted Daily Stock Data/
+data/Other Data/
+
+# --- 原始研究檔（已整理進 archive/ 與 docs/） ---
+/ch6_portfolio_optimization.ipynb
+/lit-review/
+/project-presentation/
+*.pptx
+
+# --- 執行期產物 ---
+artifacts/
+*.keras
+*.pkl
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- 機密 ---
+.env
+*.token
+dwave.conf
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

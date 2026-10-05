@@ -1,0 +1,70 @@
+# 實驗設定。所有路徑皆相對於 repo 根目錄。
+seed: 42
+
+paths:
+  stocks: data/stocks            # FinMind TaiwanStockPriceAdj（還原股價）
+  holdings: data/meta/Holding_0050.xlsx   # TEJ 0050 成分股持股明細
+  trading_dates: data/meta/trading_dates.feather
+  benchmark: data/meta/0050_benchmark.feather   # 0050 ETF 還原價（Yahoo Finance）
+  results: results
+  artifacts: artifacts           # 模型、scaler 等不進版控的產物
+
+# 0050 每年 3/6/9/12 月第一個星期五公告成分股調整；
+# 策略於公告日收盤決定權重，持有到下一次公告日收盤。
+quarters: ["2025_03", "2025_06", "2025_09", "2025_12", "2026_03"]
+next_announcement_after_last: "2026_06"
+
+universe:
+  min_history_days: 252          # 公告日前至少需有一年交易資料
+
+lstm:
+  window: 63                     # 回看 63 個交易日
+  horizon: 63                    # 預測未來一季（63 個交易日）報酬
+  val_frac: 0.15
+  batch_size: 512
+  epochs: 60
+  patience: 10
+  lstm_units: 32
+  dropout: 0.35
+  dense_units: 16
+
+covariance:
+  lookback_days: 252             # 公告日（含）往前 252 個交易日
+  frequency: 63                  # 以「季」為單位，與 LSTM 預測的季報酬一致
+  ewma_span: 180
+  estimators: [sample, ewma, lw_identity, lw_const_corr, lw_single_factor]
+  # 主圖使用的估計式（實驗前預先指定，避免事後挑選）；完整比較見 results/summary
+  primary: lw_const_corr
+
+# 均值—變異數效用 U(w) = mu'w - (gamma/2) w'Σw 的風險趨避係數網格（季化單位）。
+# QUBO 無法直接最大化 Sharpe（非二次式），因此以 gamma 掃描效率前緣、
+# 取事前 Sharpe 最高者作為 QUBO 版本的 MSRP。
+gamma_grid: [0.5, 1, 2, 5, 10, 20, 50]
+
+qubo:
+  sampler: neal                  # neal | qpu | hybrid（後兩者需 DWAVE_API_TOKEN）
+  # lambda = penalty_factor × L，L 為「每違反一個 lot 可換得的最大目標改善量」的上界。
+  # penalty_factor > 1 理論上保證最低能量解可行，但 penalty 會主導能量地形、使模擬退火難以在
+  # 可行解之間移動。依 scripts/penalty_sensitivity.py（只用 2025_03 的事前輸入、以目標函數評估），
+  # 選擇「預設 sweeps 下所有設定可行率皆 >= 50%」的最小係數 0.1；不可行時以最大餘數法修復並記錄。
+  penalty_factor: 0.1
+  precisions:
+    P20:  {precision: 20,  num_reads: 100, num_sweeps: 2000}
+    P100: {precision: 100, num_reads: 300, num_sweeps: 8000}
+
+# 顯式正則化對照組：MVO 加單一權重上限
+max_weight_cap: 0.10
+
+continuous_sa:
+  maxiter: 500
+  initial_temp: 50000
+
+backtest:
+  fee_rate: 0.001425             # 券商手續費（買賣皆收）
+  tax_rate: 0.003                # 證券交易稅（賣出收）
+
+monte_carlo:
+  n_paths: 100000
+  confidence: 0.95
+
+n_jobs: 14

@@ -1,0 +1,807 @@
+TY  - JOUR
+AU  - Sakuler, Wolfgang
+AU  - Oberreuter, Johannes M.
+AU  - Aiolfi, Riccardo
+AU  - Asproni, Luca
+AU  - Roman, Branislav
+AU  - Schiefer, Jürgen
+TI  - A real-world test of portfolio optimization with quantum annealing
+JO  - Quantum Machine Intelligence
+PY  - 2025
+VL  - 7
+IS  - 1
+DO  - 10.1007/s42484-025-00268-2
+UR  - https://doi.org/10.1007/s42484-025-00268-2
+KW  - lit-review-automation
+KW  - QA/QUBO portfolio empirics
+N1  - Real-world test of portfolio optimization on a quantum annealer; directly comparable empirical evidence for the solver-vs-investment-performance question.
+ER  - 
+
+TY  - JOUR
+AU  - Carrascal, Ginés
+AU  - Hernamperez, Paula
+AU  - Botella, Guillermo
+AU  - Barrio, Alberto del
+TI  - Backtesting Quantum Computing Algorithms for Portfolio Optimization
+JO  - IEEE Transactions on Quantum Engineering
+PY  - 2024
+VL  - 5
+SP  - 1
+EP  - 20
+DO  - 10.1109/tqe.2023.3337328
+UR  - https://doi.org/10.1109/tqe.2023.3337328
+KW  - lit-review-automation
+KW  - QA/QUBO portfolio empirics
+N1  - Backtests quantum portfolio algorithms over time; directly addresses the backtest-design gap the student criticises.
+ER  - 
+
+TY  - JOUR
+AU  - Buonaiuto, Giuseppe
+AU  - Gargiulo, Francesco
+AU  - De Pietro, Giuseppe
+AU  - Esposito, Massimo
+AU  - Pota, Marco
+TI  - Best practices for portfolio optimization by quantum computing, experimented on real quantum devices
+JO  - Scientific Reports
+PY  - 2023
+VL  - 13
+IS  - 1
+DO  - 10.1038/s41598-023-45392-w
+UR  - https://doi.org/10.1038/s41598-023-45392-w
+AB  - In finance, portfolio optimization aims at finding optimal investments maximizing a trade-off between return and risks, given some constraints. Classical formulations of this quadratic optimization problem have exact or heuristic solutions, but the complexity scales up as the market dimension increases. Recently, researchers are evaluating the possibility of facing the complexity scaling issue by employing quantum computing. In this paper, the problem is solved using the Variational Quantum Eigensolver (VQE), which in principle is very efficient. The main outcome of this work consists of the definition of the best hyperparameters to set, in order to perform Portfolio Optimization by VQE on real quantum computers. In particular, a quite general formulation of the constrained quadratic problem is considered, which is translated into Quadratic Unconstrained Binary Optimization by the binary encoding of variables and by including constraints in the objective function. This is converted into a set of quantum operators (Ising Hamiltonian), whose minimum eigenvalue is found by VQE and corresponds to the optimal solution. In this work, different hyperparameters of the procedure are analyzed, including different ansatzes and optimization methods by means of experiments on both simulators and real quantum computers. Experiments show that there is a strong dependence of solutions quality on the sufficiently sized quantum computer and correct hyperparameters, and with the best choices, the quantum algorithm run on real quantum devices reaches solutions very close to the exact one, with a strong convergence rate towards the classical solution, even without error-mitigation techniques. Moreover, results obtained on different real quantum devices, for a small-sized example, show the relation between the quality of the solution and the dimension of the quantum processor. Evidences allow concluding which are the best ways to solve real Portfolio Optimization problems by VQE on quantum devices, and confirm the possibility to solve them with higher efficiency, with respect to existing methods, as soon as the size of quantum hardware will be sufficiently high.
+KW  - lit-review-automation
+KW  - QA/QUBO portfolio empirics
+N1  - Best-practice study running portfolio QUBOs on real quantum devices (annealer and gate-based) with guidance on formulation and parameters.
+ER  - 
+
+TY  - JOUR
+AU  - Wei, Haijing
+AU  - Wang, Yanbo J.
+AU  - Yang, Haoxiang
+AU  - Yang, Xuan
+AU  - Cao, Mingming
+AU  - Xu, Qi
+AU  - Cai, Minglei
+AU  - Wang, Yiduo
+AU  - Mao, Zhichao
+AU  - Cao, Xiaofeng
+AU  - Mei, Quanxin
+AU  - Wang, Jie
+AU  - Zhou, Xiaojun
+AU  - Yao, Lin
+AU  - Zhao, Wending
+TI  - Solving Multiple Discretization Portfolio Optimization Problem with Quantum-Classical Hybrid Algorithms
+JO  - Computational Economics
+PY  - 2025
+VL  - 68
+IS  - 1
+SP  - 227
+EP  - 256
+DO  - 10.1007/s10614-025-11061-5
+UR  - https://doi.org/10.1007/s10614-025-11061-5
+KW  - lit-review-automation
+KW  - QUBO modeling & penalties
+N1  - Multiple weight-discretization portfolio problems solved with quantum-classical hybrid algorithms; directly about discretization, the study's central mechanism.
+ER  - 
+
+TY  - JOUR
+AU  - Xu, Hanjing
+AU  - Dasgupta, Samudra
+AU  - Pothen, Alex
+AU  - Banerjee, Arnab
+TI  - Dynamic Asset Allocation with Expected Shortfall via Quantum Annealing
+JO  - Entropy
+PY  - 2023
+VL  - 25
+IS  - 3
+SP  - 541
+DO  - 10.3390/e25030541
+UR  - https://doi.org/10.3390/e25030541
+AB  - Recent advances in quantum hardware offer new approaches to solve various optimization problems that can be computationally expensive when classical algorithms are employed. We propose a hybrid quantum-classical algorithm to solve a dynamic asset allocation problem where a target return and a target risk metric (expected shortfall) are specified. We propose an iterative algorithm that treats the target return as a constraint in a Markowitz portfolio optimization model, and dynamically adjusts the target return to satisfy the targeted expected shortfall. The Markowitz optimization is formulated as a Quadratic Unconstrained Binary Optimization (QUBO) problem. The use of the expected shortfall risk metric enables the modeling of extreme market events. We compare the results from D-Wave’s 2000Q and Advantage quantum annealers using real-world financial data. Both quantum annealers are able to generate portfolios with more than 80% of the return of the classical optimal solutions, while satisfying the expected shortfall. We observe that experiments on assets with higher correlations tend to perform better, which may help to design practical quantum applications in the near term.
+KW  - lit-review-automation
+KW  - QA/QUBO portfolio empirics
+N1  - Hybrid quantum-classical annealing for dynamic asset allocation with an expected-shortfall target; extends QUBO portfolio work beyond variance risk.
+ER  - 
+
+TY  - JOUR
+AU  - Acharya, Atithi
+AU  - Yalovetzky, Romina
+AU  - Minssen, Pierre
+AU  - Chakrabarti, Shouvanik
+AU  - Shaydulin, Ruslan
+AU  - Raymond, Rudy
+AU  - Sun, Yue
+AU  - Herman, Dylan
+AU  - Andrist, Ruben S.
+AU  - Salton, Grant
+AU  - Schuetz, Martin J. A.
+AU  - Katzgraber, Helmut G.
+AU  - Pistoia, Marco
+TI  - Decomposition pipeline for large-scale portfolio optimization with applications to near-term quantum computing
+JO  - Physical Review Research
+PY  - 2025
+VL  - 7
+IS  - 2
+DO  - 10.1103/physrevresearch.7.023142
+UR  - https://doi.org/10.1103/physrevresearch.7.023142
+AB  - Industrially relevant constrained optimization problems, such as portfolio optimization and portfolio rebalancing, are often intractable or difficult to solve exactly. In this work, we propose and benchmark a decomposition pipeline targeting portfolio optimization and rebalancing problems with constraints. The pipeline decomposes the optimization problem into constrained subproblems, which are then solved separately and aggregated to give a final result. Our pipeline includes three main components: preprocessing of correlation matrices based on random matrix theory, modified spectral clustering based on Newman's algorithm, and risk rebalancing. Our empirical results show that our pipeline consistently decomposes real-world portfolio optimization problems into subproblems with a size reduction of approximately 80%. Since subproblems are then solved independently, our pipeline drastically reduces the total computation time for state-of-the-art solvers. Moreover, by decomposing large problems into several smaller subproblems, the pipeline enables the use of near-term quantum devices as solvers, providing a path toward practical utility of quantum computers in portfolio optimization.
+KW  - lit-review-automation
+KW  - Hybrid/decomposition & benchmarks
+N1  - Decomposition pipeline for large constrained portfolio and rebalancing problems targeting near-term quantum hardware; addresses the scale limit discussed for direct QPU.
+ER  - 
+
+TY  - JOUR
+AU  - Bertsimas, Dimitris
+AU  - Cory-Wright, Ryan
+TI  - A Scalable Algorithm for Sparse Portfolio Selection
+JO  - INFORMS Journal on Computing
+PY  - 2022
+VL  - 34
+IS  - 3
+SP  - 1489
+EP  - 1511
+DO  - 10.1287/ijoc.2021.1127
+UR  - https://doi.org/10.1287/ijoc.2021.1127
+AB  - The sparse portfolio selection problem is one of the most famous and frequently studied problems in the optimization and financial economics literatures. In a universe of risky assets, the goal is to construct a portfolio with maximal expected return and minimum variance, subject to an upper bound on the number of positions, linear inequalities, and minimum investment constraints. Existing certifiably optimal approaches to this problem have not been shown to converge within a practical amount of time at real-world problem sizes with more than 400 securities. In this paper, we propose a more scalable approach. By imposing a ridge regularization term, we reformulate the problem as a convex binary optimization problem, which is solvable via an efficient outer-approximation procedure. We propose various techniques for improving the performance of the procedure, including a heuristic that supplies high-quality warm-starts, and a second heuristic for generating additional cuts that strengthens the root relaxation. We also study the problem’s continuous relaxation, establish that it is second-order cone representable, and supply a sufficient condition for its tightness. In numerical experiments, we establish that a conjunction of the imposition of ridge regularization and the use of the outer-approximation procedure gives rise to dramatic speedups for sparse portfolio selection problems. Summary of Contribution: This paper proposes a new decomposition scheme for tackling the problem of sparse portfolio selection: the problem of selecting a limited number of securities in a portfolio. This is a challenging problem to solve in high dimensions, as it belongs to the class of mixed-integer, nonseparable nonlinear optimization problems. We propose a new Benders-type cutting plane method and demonstrate its efficacy on a wide set of both synthetic and real-world problems, including problems with thousands of securities. Our approach also provides insights for other mixed-integer optimization problems with logical constraints.
+KW  - lit-review-automation
+KW  - Classical MIQP & cardinality
+N1  - Scalable exact/near-exact algorithm for sparse (cardinality-constrained) portfolio selection; strong classical baseline for NP-hard settings.
+ER  - 
+
+TY  - JOUR
+AU  - Pantaleo, Ester
+AU  - Tumminello, Michele
+AU  - Lillo, Fabrizio
+AU  - Mantegna, Rosario N.
+TI  - When do improved covariance matrix estimators enhance portfolio optimization? An empirical comparative study of nine estimators
+JO  - Quantitative Finance
+PY  - 2011
+VL  - 11
+IS  - 7
+SP  - 1067
+EP  - 1080
+DO  - 10.1080/14697688.2010.534813
+UR  - https://doi.org/10.1080/14697688.2010.534813
+KW  - lit-review-automation
+KW  - Estimation error & regularization
+N1  - Empirical comparison of nine covariance estimators in portfolio optimization; supports the study's multi-estimator design.
+ER  - 
+
+TY  - JOUR
+AU  - Kim, Seongmin
+AU  - Ahn, Sang-Woo
+AU  - Suh, In-Saeng
+AU  - Dowling, Alexander W.
+AU  - Lee, Eungkyu
+AU  - Luo, Tengfei
+TI  - Quantum annealing for combinatorial optimization: a benchmarking study
+JO  - npj Quantum Information
+PY  - 2025
+VL  - 11
+IS  - 1
+DO  - 10.1038/s41534-025-01020-1
+UR  - https://doi.org/10.1038/s41534-025-01020-1
+KW  - lit-review-automation
+KW  - Hybrid/decomposition & benchmarks
+N1  - Benchmarking study of quantum annealing for combinatorial optimization against classical solvers; methodological reference for fair comparison.
+ER  - 
+
+TY  - JOUR
+AU  - Xu, Wei
+AU  - Tang, Jie
+AU  - Yiu, Ka Fai Cedric
+AU  - Peng, Jian Wen
+TI  - An Efficient Global Optimal Method for Cardinality Constrained Portfolio Optimization
+JO  - INFORMS Journal on Computing
+PY  - 2024
+VL  - 36
+IS  - 2
+SP  - 690
+EP  - 704
+DO  - 10.1287/ijoc.2022.0344
+UR  - https://doi.org/10.1287/ijoc.2022.0344
+AB  - This paper focuses on the cardinality constrained mean-variance portfolio optimization, in which only a small number of assets are invested. We first treat the covariance matrix of asset returns as a diagonal matrix with a special matrix processing technique. Using the dual theory, we formulate the lower bound problem of the original problem as a max-min optimization. For the inner minimization problem with the cardinality constraint, we obtain its analytical solution for the portfolio weights. Then, the lower bound problem turns out to be a simple concave optimization with respect to the Lagrangian multipliers. Thus, the interval split method and the supergradient method are developed to solve it. Based on the precise lower bound, the depth-first branch and bound method are designed to find the global optimal investment selection strategy. Compared with other lower bounds and the current popular mixed integer programming solvers, such as CPLEX and SCIP, the numerical experiments show that our method has a high searching efficiency. History: Accepted by Pascal Van Hentenryck, Area Editor for Computational Modeling: Methods & Analysis. Funding: This work was supported by the National Natural Science Foundation of China [Grants 12101317, 12271071, and 11991024], the Natural Science Foundation of Jiangsu Province [Grant BK20200819], the Team Project of Innovation Leading Talent in Chongqing [Grant CQYC20210309536], the Contract System Project of Chongqing Talent Plan [Grant cstc2022ycjh-bgzxm0147], and the Philosophy and Social Science Fund of Education Department of Jiangsu Province [Grant 2020SJA0168]. K.F.C. Yiu is supported in part by the Research Grants Council of Hong Hong [Grant PolyU 15223419], the Hong Kong Polytechnic University [Grants 4-ZZPT and 1-WZ0E], and the Research Centre for Quantitative Finance [Grant 1-CE03]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0344 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0344 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .
+KW  - lit-review-automation
+KW  - Classical MIQP & cardinality
+N1  - Global optimal method for cardinality-constrained mean-variance; classical exact baseline for the NP-hard extension.
+ER  - 
+
+TY  - JOUR
+AU  - Glover, Fred
+AU  - Kochenberger, Gary
+AU  - Hennig, Rick
+AU  - Du, Yu
+TI  - Quantum bridge analytics I: a tutorial on formulating and using QUBO models
+JO  - Annals of Operations Research
+PY  - 2022
+VL  - 314
+IS  - 1
+SP  - 141
+EP  - 183
+DO  - 10.1007/s10479-022-04634-2
+UR  - https://doi.org/10.1007/s10479-022-04634-2
+KW  - lit-review-automation
+KW  - QUBO modeling & penalties
+N1  - Republished Glover et al. QUBO tutorial (Annals of OR version); standard reference for penalty formulation.
+ER  - 
+
+TY  - JOUR
+AU  - Angara, Prashanti Priya
+AU  - Lykov, Danylo
+AU  - Stege, Ulrike
+AU  - Alexeev, Yuri
+AU  - Muller, Hausi
+TI  - The Art of Avoiding Constraints: A Penalty-free Approach to Constrained Combinatorial Optimization with QAOA
+JO  - IEEE Transactions on Quantum Engineering
+PY  - 2026
+SP  - 1
+EP  - 29
+DO  - 10.1109/tqe.2026.3738061
+UR  - https://doi.org/10.1109/tqe.2026.3738061
+KW  - lit-review-automation
+KW  - QUBO modeling & penalties
+N1  - Penalty-free constrained optimization with QAOA; parallels Lozano's penalty-free pipeline on the gate model.
+ER  - 
+
+TY  - JOUR
+AU  - Behr, Patrick
+AU  - Guettler, Andre
+AU  - Miebs, Felix
+TI  - On portfolio optimization: Imposing the right constraints
+JO  - Journal of Banking &amp; Finance
+PY  - 2013
+VL  - 37
+IS  - 4
+SP  - 1232
+EP  - 1242
+DO  - 10.1016/j.jbankfin.2012.11.020
+UR  - https://doi.org/10.1016/j.jbankfin.2012.11.020
+KW  - lit-review-automation
+KW  - Estimation error & regularization
+N1  - Shows which constraints improve out-of-sample mean-variance portfolios; supports the argument that restricting the solution space acts as regularization.
+ER  - 
+
+TY  - JOUR
+AU  - Thomassin, Pablo
+AU  - Guerard, Guillaume
+AU  - Djebali, Sonia
+AU  - Lambert, Vincent Marc
+TI  - A quantum model for constrained Markowitz modern portfolio using slack variables to process mixed-binary optimization under QAOA
+JO  - Quantum Machine Intelligence
+PY  - 2025
+VL  - 7
+IS  - 2
+DO  - 10.1007/s42484-025-00330-z
+UR  - https://doi.org/10.1007/s42484-025-00330-z
+KW  - lit-review-automation
+KW  - Gate-based (QAOA/VQE) portfolio
+N1  - QAOA with slack variables for constrained Markowitz; relevant to how inequality constraints inflate qubit counts.
+ER  - 
+
+TY  - JOUR
+AU  - Butler, Andrew
+AU  - Kwon, Roy H.
+TI  - Integrating prediction in mean-variance portfolio optimization
+JO  - Quantitative Finance
+PY  - 2023
+VL  - 23
+IS  - 3
+SP  - 429
+EP  - 452
+DO  - 10.1080/14697688.2022.2162432
+UR  - https://doi.org/10.1080/14697688.2022.2162432
+KW  - lit-review-automation
+KW  - Estimation error & regularization
+N1  - Integrating return prediction into mean-variance optimization; relevant to using LSTM forecasts as inputs.
+ER  - 
+
+TY  - JOUR
+AU  - Ebrahimi, Amirmohammad
+AU  - Amini, Hamed
+AU  - Liu, Hongcheng
+TI  - Cardinality-constrained portfolio optimization with clustering
+JO  - Annals of Operations Research
+PY  - 2026
+DO  - 10.1007/s10479-026-07184-z
+UR  - https://doi.org/10.1007/s10479-026-07184-z
+KW  - lit-review-automation
+KW  - Classical MIQP & cardinality
+N1  - Cardinality-constrained portfolio optimization with clustering; relevant to the student's critique of cluster-based preprocessing.
+ER  - 
+
+TY  - JOUR
+AU  - Hen, Itay
+AU  - Spedalieri, Federico M.
+TI  - Quantum Annealing for Constrained Optimization
+JO  - Physical Review Applied
+PY  - 2016
+VL  - 5
+IS  - 3
+DO  - 10.1103/physrevapplied.5.034007
+UR  - https://doi.org/10.1103/physrevapplied.5.034007
+KW  - lit-review-automation
+KW  - QUBO modeling & penalties
+N1  - Quantum annealing for constrained optimization (constraint-preserving drivers); background for penalty-free alternatives.
+ER  - 
+
+TY  - JOUR
+AU  - Valle, Cristiano Arbex
+TI  - Portfolio optimisation: Bridging the gap between theory and practice
+JO  - Computers &amp; Operations Research
+PY  - 2025
+VL  - 175
+SP  - 106918
+DO  - 10.1016/j.cor.2024.106918
+UR  - https://doi.org/10.1016/j.cor.2024.106918
+KW  - lit-review-automation
+KW  - Classical MIQP & cardinality
+N1  - Bridging theory and practice in portfolio optimisation (real-world constraints); context for realistic backtest design.
+ER  - 
+
+TY  - JOUR
+AU  - Dom, M. Sipke
+AU  - Howard, Clint
+AU  - Jansen, Maarten
+AU  - Lohre, Harald
+TI  - Beyond GMV: the relevance of covariance matrix estimation for risk-based portfolio construction
+JO  - Quantitative Finance
+PY  - 2025
+VL  - 25
+IS  - 3
+SP  - 403
+EP  - 419
+DO  - 10.1080/14697688.2025.2468268
+UR  - https://doi.org/10.1080/14697688.2025.2468268
+KW  - lit-review-automation
+KW  - Estimation error & regularization
+N1  - Covariance estimation for risk-based portfolios beyond GMV; supports comparing several Sigma estimators.
+ER  - 
+
+TY  - JOUR
+AU  - Arai, Shunta
+AU  - Oshiyama, Hiroki
+AU  - Nishimori, Hidetoshi
+TI  - Effectiveness of quantum annealing for continuous-variable optimization
+JO  - Physical Review A
+PY  - 2023
+VL  - 108
+IS  - 4
+DO  - 10.1103/physreva.108.042403
+UR  - https://doi.org/10.1103/physreva.108.042403
+KW  - lit-review-automation
+KW  - QUBO modeling & penalties
+N1  - QA effectiveness for continuous-variable optimization via discretization; directly relevant to encoding continuous weights.
+ER  - 
+
+TY  - JOUR
+AU  - Bowles, Joseph
+AU  - Dauphin, Alexandre
+AU  - Huembeli, Patrick
+AU  - Martinez, José
+AU  - Acín, Antonio
+TI  - Quadratic Unconstrained Binary Optimization via Quantum-Inspired Annealing
+JO  - Physical Review Applied
+PY  - 2022
+VL  - 18
+IS  - 3
+DO  - 10.1103/physrevapplied.18.034016
+UR  - https://doi.org/10.1103/physrevapplied.18.034016
+KW  - lit-review-automation
+KW  - Hybrid/decomposition & benchmarks
+N1  - Quantum-inspired annealing for QUBO; a classical quantum-inspired baseline.
+ER  - 
+
+TY  - JOUR
+AU  - Corazza, Marco
+AU  - Favaretto, Daniela
+TI  - On the existence of solutions to the quadratic mixed-integer mean–variance portfolio selection problem
+JO  - European Journal of Operational Research
+PY  - 2007
+VL  - 176
+IS  - 3
+SP  - 1947
+EP  - 1960
+DO  - 10.1016/j.ejor.2005.10.053
+UR  - https://doi.org/10.1016/j.ejor.2005.10.053
+KW  - lit-review-automation
+KW  - Classical MIQP & cardinality
+N1  - Existence of solutions to mixed-integer mean-variance problems (round lots); theoretical basis for integer weights.
+ER  - 
+
+TY  - JOUR
+AU  - Chakrabarti, Deepayan
+TI  - Parameter-free robust optimization for the maximum-Sharpe portfolio problem
+JO  - European Journal of Operational Research
+PY  - 2021
+VL  - 293
+IS  - 1
+SP  - 388
+EP  - 399
+DO  - 10.1016/j.ejor.2020.11.052
+UR  - https://doi.org/10.1016/j.ejor.2020.11.052
+KW  - lit-review-automation
+KW  - Estimation error & regularization
+N1  - Robust optimization for maximum-Sharpe; relevant to MSRP fragility.
+ER  - 
+
+TY  - JOUR
+AU  - Woodside-Oriakhi, M.
+AU  - Lucas, C.
+AU  - Beasley, J.E.
+TI  - Heuristic algorithms for the cardinality constrained efficient frontier
+JO  - European Journal of Operational Research
+PY  - 2011
+VL  - 213
+IS  - 3
+SP  - 538
+EP  - 550
+DO  - 10.1016/j.ejor.2011.03.030
+UR  - https://doi.org/10.1016/j.ejor.2011.03.030
+KW  - lit-review-automation
+KW  - Classical MIQP & cardinality
+N1  - Heuristics for the cardinality-constrained efficient frontier; classical baseline literature.
+ER  - 
+
+TY  - JOUR
+AU  - Pearson, Adam
+AU  - Mishra, Anurag
+AU  - Hen, Itay
+AU  - Lidar, Daniel A.
+TI  - Analog errors in quantum annealing: doom and hope
+JO  - npj Quantum Information
+PY  - 2019
+VL  - 5
+IS  - 1
+DO  - 10.1038/s41534-019-0210-7
+UR  - https://doi.org/10.1038/s41534-019-0210-7
+AB  - Quantum annealing has the potential to provide a speedup over classical algorithms in solving optimization problems. Just as for any other quantum device, suppressing Hamiltonian control errors will be necessary before quantum annealers can achieve speedups. Such analog control errors are known to lead to $$J$$ J -chaos, wherein the probability of obtaining the optimal solution, encoded as the ground state of the intended Hamiltonian, varies widely depending on the control error. Here, we show that $$J$$ J -chaos causes a catastrophic failure of quantum annealing, in that the scaling of the time-to-solution metric becomes worse than that of a deterministic (exhaustive) classical solver. We demonstrate this empirically using random Ising spin glass problems run on the two latest generations of the D-Wave quantum annealers. We then proceed to show that this doomsday scenario can be mitigated using a simple error suppression and correction scheme known as quantum annealing correction (QAC). By using QAC, the time-to-solution scaling of the same D-Wave devices is improved to below that of the classical upper bound, thus restoring hope in the speedup prospects of quantum annealing.
+KW  - lit-review-automation
+KW  - Annealing physics & control
+N1  - Analog control errors limit QA; explains precision limits relevant to large penalty coefficients.
+ER  - 
+
+TY  - JOUR
+AU  - Bass, Gideon
+AU  - Henderson, Maxwell
+AU  - Heath, Joshua
+AU  - Dulny, Joseph
+TI  - Optimizing the optimizer: decomposition techniques for quantum annealing
+JO  - Quantum Machine Intelligence
+PY  - 2021
+VL  - 3
+IS  - 1
+DO  - 10.1007/s42484-021-00039-9
+UR  - https://doi.org/10.1007/s42484-021-00039-9
+KW  - lit-review-automation
+KW  - Hybrid/decomposition & benchmarks
+N1  - Decomposition techniques for quantum annealing (QBSolv-like); explains how hybrid solvers work.
+ER  - 
+
+TY  - JOUR
+AU  - Rønnow, Troels F.
+AU  - Wang, Zhihui
+AU  - Job, Joshua
+AU  - Boixo, Sergio
+AU  - Isakov, Sergei V.
+AU  - Wecker, David
+AU  - Martinis, John M.
+AU  - Lidar, Daniel A.
+AU  - Troyer, Matthias
+TI  - Defining and detecting quantum speedup
+JO  - Science
+PY  - 2014
+VL  - 345
+IS  - 6195
+SP  - 420
+EP  - 424
+DO  - 10.1126/science.1252319
+UR  - https://doi.org/10.1126/science.1252319
+AB  - How to benchmark a quantum computer Quantum machines offer the possibility of performing certain computations much faster than their classical counterparts. However, how to define and measure quantum speedup is a topic of debate. Rønnow et al. describe methods for fairly evaluating the difference in computational power between classical and quantum processors. They define various types of quantum speedup and consider quantum processors that are designed to solve a specific class of problems. Science , this issue p. 420
+KW  - lit-review-automation
+KW  - Hybrid/decomposition & benchmarks
+N1  - Defines quantum speedup and how to benchmark annealers fairly; central to the fair-comparison critique.
+ER  - 
+
+TY  - JOUR
+AU  - Lang, Jonas
+AU  - Zielinski, Sebastian
+AU  - Feld, Sebastian
+TI  - Strategic Portfolio Optimization Using Simulated, Digital, and Quantum Annealing
+JO  - Applied Sciences
+PY  - 2022
+VL  - 12
+IS  - 23
+SP  - 12288
+DO  - 10.3390/app122312288
+UR  - https://doi.org/10.3390/app122312288
+AB  - In this work, we introduce a new workflow to solve portfolio optimization problems on annealing platforms. We combine a classical preprocessing step with a modified unconstrained binary optimization (QUBO) model and evaluate it using simulated annealing (classical computer), digital annealing (Fujitsu’s Digital Annealing Unit), and quantum annealing (D-Wave Advantage). Starting from Markowitz’s theory on portfolio optimization, our classical preprocessing step finds the most promising assets within a set of possible assets to choose from. We then modify existing QUBO models for portfolio optimization, such that there are no limitations on the number of assets that can be invested in. Furthermore, our QUBO model enables an investor to also place an arbitrary amount of money into each asset. We apply this modified QUBO to the set of promising asset candidates we generated previously via classical preprocessing. A solution to our QUBO model contains information about what percentage of the whole available capital should be invested into which asset. For the evaluation, we have used publicly available real-world data sets of stocks of the New York Stock Exchange as well as common ETFs. Finally, we have compared the respective annealing results with randomly generated portfolios by using the return, variance, and diversification of the created portfolios as measures. The results show that our QUBO formulation is capable of creating well-diversified portfolios that respect certain criteria given by an investor, such as maximizing return, minimizing risk, or sticking to a certain budget.
+KW  - lit-review-automation
+KW  - QA/QUBO portfolio empirics
+N1  - Compares simulated, digital and quantum annealing on portfolio QUBOs; closest design to this study's SA vs QA comparison.
+ER  - 
+
+TY  - JOUR
+AU  - Albash, Tameem
+AU  - Lidar, Daniel A.
+TI  - Demonstration of a Scaling Advantage for a Quantum Annealer over Simulated Annealing
+JO  - Physical Review X
+PY  - 2018
+VL  - 8
+IS  - 3
+DO  - 10.1103/physrevx.8.031016
+UR  - https://doi.org/10.1103/physrevx.8.031016
+KW  - lit-review-automation
+KW  - Hybrid/decomposition & benchmarks
+N1  - Demonstrates scaling advantage of QA over SA on crafted instances; key reference in the QA-vs-SA debate.
+ER  - 
+
+TY  - JOUR
+AU  - Marzec, Michael
+TI  - Portfolio Optimization: Applications in Quantum Computing
+JO  - Handbook of High‐Frequency Trading and Modeling in Finance
+PY  - 2016
+SP  - 73
+EP  - 106
+DO  - 10.1002/9781118593486.ch4
+UR  - https://doi.org/10.1002/9781118593486.ch4
+KW  - lit-review-automation
+KW  - QA/QUBO portfolio empirics
+N1  - Early handbook chapter on portfolio optimization applications in quantum computing (binary encodings of weights).
+ER  - 
+
+TY  - JOUR
+AU  - Kochenberger, Gary
+AU  - Hao, Jin-Kao
+AU  - Glover, Fred
+AU  - Lewis, Mark
+AU  - Lü, Zhipeng
+AU  - Wang, Haibo
+AU  - Wang, Yang
+TI  - The unconstrained binary quadratic programming problem: a survey
+JO  - Journal of Combinatorial Optimization
+PY  - 2014
+VL  - 28
+IS  - 1
+SP  - 58
+EP  - 81
+DO  - 10.1007/s10878-014-9734-0
+UR  - https://doi.org/10.1007/s10878-014-9734-0
+KW  - lit-review-automation
+KW  - QUBO modeling & penalties
+N1  - Survey of UBQP models and classical solution methods; reference for classical QUBO heuristics.
+ER  - 
+
+TY  - JOUR
+AU  - Michaud, Richard O.
+TI  - The Markowitz Optimization Enigma: Is ‘Optimized’ Optimal?
+JO  - Financial Analysts Journal
+PY  - 1989
+VL  - 45
+IS  - 1
+SP  - 31
+EP  - 42
+DO  - 10.2469/faj.v45.n1.31
+UR  - https://doi.org/10.2469/faj.v45.n1.31
+KW  - lit-review-automation
+KW  - Estimation error & regularization
+N1  - Michaud's 'optimized is not optimal' error-maximization argument; core to the decoupling of solver optimality from investment performance.
+ER  - 
+
+TY  - UNPB
+AU  - López de Prado, Marcos
+TI  - Generalized Optimal Trading Trajectories: A Financial Quantum Computing Application
+PY  - 2015
+PB  - Elsevier BV
+DO  - 10.2139/ssrn.2575184
+UR  - https://doi.org/10.2139/ssrn.2575184
+AB  - Generalized dynamic portfolio optimization problems have no known closed-form solution. These problems are particularly relevant to large asset managers, as the costs from excessive turnover and implementation shortfall may critically erode the profitability of their investment strategies. In this brief note we demonstrate how this financial problem, intractable to modern supercomputers, can be reformulated as an integer optimization problem. Such representation makes it amenable to quantum computers.
+KW  - lit-review-automation
+KW  - QA/QUBO portfolio empirics
+N1  - Lopez de Prado's generalized optimal trading trajectories, precursor of Rosenberg et al.
+ER  - 
+
+TY  - CPAPER
+AU  - Kerenidis, Iordanis
+AU  - Prakash, Anupam
+AU  - Szilágyi, Dániel
+TI  - Quantum Algorithms for Portfolio Optimization
+T2  - Proceedings of the 1st ACM Conference on Advances in Financial Technologies
+PY  - 2019
+SP  - 147
+EP  - 155
+PB  - ACM
+DO  - 10.1145/3318041.3355465
+UR  - https://doi.org/10.1145/3318041.3355465
+KW  - lit-review-automation
+KW  - Gate-based (QAOA/VQE) portfolio
+N1  - Quantum interior-point algorithms for portfolio optimization; theoretical gate-model speedup claim for the continuous problem.
+ER  - 
+
+TY  - JOUR
+AU  - Farhi, Edward
+AU  - Goldstone, Jeffrey
+AU  - Gutmann, Sam
+AU  - Lapan, Joshua
+AU  - Lundgren, Andrew
+AU  - Preda, Daniel
+TI  - A Quantum Adiabatic Evolution Algorithm Applied to Random Instances of an NP-Complete Problem
+JO  - Science
+PY  - 2001
+VL  - 292
+IS  - 5516
+SP  - 472
+EP  - 475
+DO  - 10.1126/science.1057726
+UR  - https://doi.org/10.1126/science.1057726
+AB  - A quantum system will stay near its instantaneous ground state if the Hamiltonian that governs its evolution varies slowly enough. This quantum adiabatic behavior is the basis of a new class of algorithms for quantum computing. We tested one such algorithm by applying it to randomly generated hard instances of an NP-complete problem. For the small examples that we could simulate, the quantum adiabatic algorithm worked well, providing evidence that quantum computers (if large ones can be built) may be able to outperform ordinary computers on hard sets of instances of NP-complete problems.
+KW  - lit-review-automation
+KW  - Annealing physics & control
+N1  - Foundational adiabatic quantum algorithm paper; theory background for QA.
+ER  - 
+
+TY  - BOOK
+AU  - Glover, Fred
+AU  - Laguna, Manuel
+TI  - Tabu Search
+PY  - 1997
+PB  - Springer US
+DO  - 10.1007/978-1-4615-6089-0
+UR  - https://doi.org/10.1007/978-1-4615-6089-0
+KW  - lit-review-automation
+KW  - Hybrid/decomposition & benchmarks
+N1  - Tabu search monograph; classical heuristic underlying D-Wave hybrid and baselines.
+ER  - 
+
+TY  - JOUR
+AU  - Hadfield, Stuart
+AU  - Wang, Zhihui
+AU  - O’Gorman, Bryan
+AU  - Rieffel, Eleanor G.
+AU  - Venturelli, Davide
+AU  - Biswas, Rupak
+TI  - From the Quantum Approximate Optimization Algorithm to a Quantum Alternating Operator Ansatz
+JO  - Algorithms
+PY  - 2019
+VL  - 12
+IS  - 2
+SP  - 34
+DO  - 10.3390/a12020034
+UR  - https://doi.org/10.3390/a12020034
+AB  - The next few years will be exciting as prototype universal quantum processors emerge, enabling the implementation of a wider variety of algorithms. Of particular interest are quantum heuristics, which require experimentation on quantum hardware for their evaluation and which have the potential to significantly expand the breadth of applications for which quantum computers have an established advantage. A leading candidate is Farhi et al.’s quantum approximate optimization algorithm, which alternates between applying a cost function based Hamiltonian and a mixing Hamiltonian. Here, we extend this framework to allow alternation between more general families of operators. The essence of this extension, the quantum alternating operator ansatz, is the consideration of general parameterized families of unitaries rather than only those corresponding to the time evolution under a fixed local Hamiltonian for a time specified by the parameter. This ansatz supports the representation of a larger, and potentially more useful, set of states than the original formulation, with potential long-term impact on a broad array of application areas. For cases that call for mixing only within a desired subspace, refocusing on unitaries rather than Hamiltonians enables more efficiently implementable mixers than was possible in the original framework. Such mixers are particularly useful for optimization problems with hard constraints that must always be satisfied, defining a feasible subspace, and soft constraints whose violation we wish to minimize. More efficient implementation enables earlier experimental exploration of an alternating operator approach, in the spirit of the quantum approximate optimization algorithm, to a wide variety of approximate optimization, exact optimization, and sampling problems. In addition to introducing the quantum alternating operator ansatz, we lay out design criteria for mixing operators, detail mappings for eight problems, and provide a compendium with brief descriptions of mappings for a diverse array of problems.
+KW  - lit-review-automation
+KW  - Gate-based (QAOA/VQE) portfolio
+N1  - Quantum Alternating Operator Ansatz with constraint-preserving mixers; basis for Hodson et al.
+ER  - 
+
+TY  - JOUR
+AU  - Bonami, P.
+AU  - Lejeune, M. A.
+TI  - An Exact Solution Approach for Portfolio Optimization Problems Under Stochastic and Integer Constraints
+JO  - Operations Research
+PY  - 2009
+VL  - 57
+IS  - 3
+SP  - 650
+EP  - 670
+DO  - 10.1287/opre.1080.0599
+UR  - https://doi.org/10.1287/opre.1080.0599
+AB  - In this paper, we study extensions of the classical Markowitz mean-variance portfolio optimization model. First, we consider that the expected asset returns are stochastic by introducing a probabilistic constraint, which imposes that the expected return of the constructed portfolio must exceed a prescribed return threshold with a high confidence level. We study the deterministic equivalents of these models. In particular, we define under which types of probability distributions the deterministic equivalents are second-order cone programs and give closed-form formulations. Second, we account for real-world trading constraints (such as the need to diversify the investments in a number of industrial sectors, the nonprofitability of holding small positions, and the constraint of buying stocks by lots) modeled with integer variables. To solve the resulting problems, we propose an exact solution approach in which the uncertainty in the estimate of the expected returns and the integer trading restrictions are simultaneously considered. The proposed algorithmic approach rests on a nonlinear branch-and-bound algorithm that features two new branching rules. The first one is a static rule, called idiosyncratic risk branching, while the second one is dynamic and is called portfolio risk branching. The two branching rules are implemented and tested using the open-source Bonmin framework. The comparison of the computational results obtained with state-of-the-art MINLP solvers (MINLP_BB and CPLEX) and with our approach shows the effectiveness of the latter, which permits to solve to optimality problems with up to 200 assets in a reasonable amount of time. The practicality of the approach is illustrated through its use for the construction of four fund-of-funds now available on the major trading markets.
+KW  - lit-review-automation
+KW  - Classical MIQP & cardinality
+N1  - Exact approach for portfolio problems with integer constraints; classical exact baseline for round lots.
+ER  - 
+
+TY  - JOUR
+AU  - Johnson, M. W.
+AU  - Amin, M. H. S.
+AU  - Gildert, S.
+AU  - Lanting, T.
+AU  - Hamze, F.
+AU  - Dickson, N.
+AU  - Harris, R.
+AU  - Berkley, A. J.
+AU  - Johansson, J.
+AU  - Bunyk, P.
+AU  - Chapple, E. M.
+AU  - Enderud, C.
+AU  - Hilton, J. P.
+AU  - Karimi, K.
+AU  - Ladizinsky, E.
+AU  - Ladizinsky, N.
+AU  - Oh, T.
+AU  - Perminov, I.
+AU  - Rich, C.
+AU  - Thom, M. C.
+AU  - Tolkacheva, E.
+AU  - Truncik, C. J. S.
+AU  - Uchaikin, S.
+AU  - Wang, J.
+AU  - Wilson, B.
+AU  - Rose, G.
+TI  - Quantum annealing with manufactured spins
+JO  - Nature
+PY  - 2011
+VL  - 473
+IS  - 7346
+SP  - 194
+EP  - 198
+DO  - 10.1038/nature10012
+UR  - https://doi.org/10.1038/nature10012
+KW  - lit-review-automation
+KW  - Annealing physics & control
+N1  - First D-Wave manufactured-spins QA demonstration; hardware history.
+ER  - 
+
+TY  - JOUR
+AU  - Jorion, Philippe
+TI  - Bayes-Stein Estimation for Portfolio Analysis
+JO  - The Journal of Financial and Quantitative Analysis
+PY  - 1986
+VL  - 21
+IS  - 3
+SP  - 279
+DO  - 10.2307/2331042
+UR  - https://doi.org/10.2307/2331042
+KW  - lit-review-automation
+KW  - Estimation error & regularization
+N1  - Bayes-Stein shrinkage of expected returns; classical remedy for estimation error.
+ER  - 
+
+TY  - JOUR
+AU  - Denchev, Vasil S.
+AU  - Boixo, Sergio
+AU  - Isakov, Sergei V.
+AU  - Ding, Nan
+AU  - Babbush, Ryan
+AU  - Smelyanskiy, Vadim
+AU  - Martinis, John
+AU  - Neven, Hartmut
+TI  - What is the Computational Value of Finite-Range Tunneling?
+JO  - Physical Review X
+PY  - 2016
+VL  - 6
+IS  - 3
+DO  - 10.1103/physrevx.6.031015
+UR  - https://doi.org/10.1103/physrevx.6.031015
+KW  - lit-review-automation
+KW  - Hybrid/decomposition & benchmarks
+N1  - Computational value of finite-range tunneling (D-Wave vs SA); key QA-vs-SA evidence.
+ER  - 
+
+TY  - JOUR
+AU  - Venturelli, Davide
+AU  - Mandrà, Salvatore
+AU  - Knysh, Sergey
+AU  - O’Gorman, Bryan
+AU  - Biswas, Rupak
+AU  - Smelyanskiy, Vadim
+TI  - Quantum Optimization of Fully Connected Spin Glasses
+JO  - Physical Review X
+PY  - 2015
+VL  - 5
+IS  - 3
+DO  - 10.1103/physrevx.5.031040
+UR  - https://doi.org/10.1103/physrevx.5.031040
+KW  - lit-review-automation
+KW  - Annealing physics & control
+N1  - Optimization of fully connected spin glasses on D-Wave; directly relevant to dense (complete-graph) embeddings like MV QUBOs.
+ER  - 
+
+TY  - JOUR
+AU  - Tola, Vincenzo
+AU  - Lillo, Fabrizio
+AU  - Gallegati, Mauro
+AU  - Mantegna, Rosario N.
+TI  - Cluster analysis for portfolio optimization
+JO  - Journal of Economic Dynamics and Control
+PY  - 2008
+VL  - 32
+IS  - 1
+SP  - 235
+EP  - 258
+DO  - 10.1016/j.jedc.2007.01.034
+UR  - https://doi.org/10.1016/j.jedc.2007.01.034
+KW  - lit-review-automation
+KW  - Estimation error & regularization
+N1  - Cluster analysis for portfolio optimization; relevant to the critique of cluster-based preprocessing in Mugel et al.
+ER  - 

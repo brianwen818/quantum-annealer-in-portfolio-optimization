@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.feather binary
+*.xlsx binary
+*.png binary
+*.pdf binary
+*.ipynb linguist-documentation=false

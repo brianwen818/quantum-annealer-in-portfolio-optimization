@@ -1,0 +1,26 @@
+# Python 3.12
+numpy==2.3.0
+pandas==2.2.3
+pyarrow==20.0.0
+openpyxl==3.1.5
+scipy
+scikit-learn==1.7.1
+tensorflow==2.21.0
+PyPortfolioOpt==1.6.0
+cvxpy==1.9.1
+dimod==0.12.22
+dwave-neal==0.6.0
+dwave-samplers==1.7.0
+matplotlib==3.10.7
+joblib==1.5.2
+PyYAML==6.0.2
+jupyter
+nbconvert
+pytest
+
+# 選用：真實 QPU / Leap hybrid（需 DWAVE_API_TOKEN）
+dwave-system
+
+# 選用：重新下載資料
+FinMind==1.9.10
+yfinance==0.2.65
