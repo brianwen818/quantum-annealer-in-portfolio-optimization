@@ -12,7 +12,7 @@
 
 ## 欄位
 
-`stocks/*.feather`（FinMind 原始欄位）：
+`stocks/*.feather`（FinMind 欄位）：
 
 | 欄位 | 說明 |
 |---|---|
@@ -29,5 +29,4 @@
 
 * 0050 ETF 於 2025 年 6 月進行 1 拆 4 分割，Yahoo Finance 的還原價已處理；
   2025-06-11 ～ 06-17 分割停牌期間價格為常數。
-* 原始資料夾中的 `0050.feather` 內容誤為 2325（矽品）的資料，已改以 Yahoo Finance 重新取得，並未使用該錯誤檔案。
 * `scripts/download_data.py` 可重新下載（FinMind 還原股價需付費等級的 API token）。

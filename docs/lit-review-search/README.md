@@ -17,7 +17,7 @@
 ## 檢索設定
 
 - **執行日期：** 2026-10-05
-- **主要文件（用於計算用詞與語意相似度）：** 期末簡報 *Quantum_Annealing_Portfolio_Optimization.pdf*、量子退火教學簡報 *量子退火.pdf*、原始文獻筆記（移除內嵌圖片後的純文字版本）
+- **主要文件（用於計算用詞與語意相似度）：** 研究簡報、量子退火教學簡報，以及作者的文獻筆記（移除內嵌圖片後的純文字版本）
 - **種子文獻：** 32 筆（含 Lozano, 2026a/b；Stopfer & Wagner, 2025；Mugel et al., 2022；Rosenberg et al., 2016；Venturelli & Kondratyev, 2019；Markowitz, 1952；Ledoit & Wolf, 2003/2004；Lucas, 2014；Kadowaki & Nishimori, 1998 等）。經 Crossref 比對（標題、第一作者、年份皆須吻合），27 筆解析出 DOI（26 筆自動、1 筆人工確認：Markowitz, 1952）；其餘 5 筆為 arXiv 預印本或會議論文，Crossref 無對應紀錄，另於文獻回顧中以 arXiv 補充。
 - **出版年份：** 2005–2026
 - **短名單：** n = 40，`global` 模式（全部期刊中最相關的 40 篇），agent 評分至少 3 分

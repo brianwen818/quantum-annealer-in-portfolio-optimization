@@ -2,7 +2,7 @@
 
 **Quantum-Annealing-Style (QUBO) Portfolio Optimization on Taiwan 50 Constituents — a walk-forward study**
 
-[English summary](README.en.md) · [文獻回顧](docs/literature-review.md) · [期末簡報（PDF）](docs/slides/Quantum_Annealing_Portfolio_Optimization.pdf) · [量子退火教學簡報（PDF）](docs/slides/量子退火_教學簡報.pdf)
+[English summary](README.en.md) · [文獻回顧](docs/literature-review.md) · [研究簡報（PDF）](docs/slides/Quantum_Annealing_Portfolio_Optimization.pdf) · [量子退火教學簡報（PDF）](docs/slides/量子退火_教學簡報.pdf)
 
 > 把 Markowitz 投資組合問題寫成 QUBO（D-Wave 量子退火機的輸入格式），以退火演算法求解，
 > 並在 0050 成分股上做 5 季 walk-forward 回測，與古典凸最佳化、連續模擬退火及「凸最佳解四捨五入」等基準公平比較。
@@ -25,8 +25,6 @@
 ## 研究背景
 
 本研究是我在 2026 年春季於**國立政治大學資訊管理學系 AI 量子計算實驗室（AI QC Lab）**進行的專題研究，負責「量子退火在投資組合最佳化的應用」。期間我也為實驗室準備了[量子退火教學簡報](docs/slides/量子退火_教學簡報.pdf)（QUBO、Ising 模型、絕熱定理、量子穿隧）。
-
-原始研究只涵蓋單一季度，並以一份 notebook 完成（[封存版](archive/ch6_portfolio_optimization_original.ipynb)）。整理成公開 repo 時，我重新檢查了整個流程，修正了數個會影響結論的問題（例如三種方法的「MSRP」其實在解不同的問題），並延伸為 5 季 walk-forward 實驗。完整差異見 [`docs/original-results.md`](docs/original-results.md)。
 
 **研究問題**：
 
@@ -127,14 +125,11 @@ $$
 | 2026/03 | 0.08 | 70% | −0.27 |
 | **平均** | **0.09** | **61%** | **0.02** |
 
-### 4. 與原始結論的對照
+### 4. 討論
 
-| 原始（單季、簡報）結論 | 重構後（5 季） |
-|---|---|
-| 「QA 的離散性帶來被動正則化」 | **部分成立，但需重新詮釋**：退火解較分散、樣本外 Sharpe 較高，但這來自較差的最佳化與較高的 beta，而非離散化本身（四捨五入解與 MVO 幾乎相同）；MSRP 的效果可以被 10% 權重上限複製 |
-| 「精度 100 反而降低搜尋品質（精度陷阱）」 | **成立**：P=100 的確定等值損失約為 P=20 的 4 倍，與「最高位係數大、地形更崎嶇」的解釋一致 |
-| 「QA100 在 MSRP 勝 11/15」 | 原比較中 QA20、QA100 與 MVO 解的其實是三個不同的問題；統一目標後，QUBO-P100 的 MSRP 平均名次仍是 7 種方法中最佳（2.6），但領先幅度與 beta 差異一致 |
-| 「50 檔資產仍屬凸問題，量子潛力在 NP-hard 設定」 | **成立**，並得到更強的佐證：在凸問題上，連古典的四捨五入都遠勝 QUBO＋退火 |
+* **精度越高，退火越難**：P=100 的確定等值損失約為 P=20 的 4 倍。位元數更多、最高位係數（37）更大，單一位元翻轉造成的能量跳動更劇烈，搜尋更容易卡在次佳解。
+* **解品質與投資績效脫鉤，但原因可以拆解**：退火解較分散、beta 較高，在多頭期間樣本外表現較好；這不是離散化本身的效果（四捨五入解與 MVO 幾乎相同），而 MSRP 部分的效果可以用 10% 權重上限以更低風險複製。
+* **凸問題上沒有量子優勢的空間**：50 檔 long-only 均值—變異數問題是凸問題，古典求解器在毫秒內即可求得全域最佳解，連簡單的四捨五入都遠勝 QUBO＋退火。若量子方法有價值，應出現在基數限制、整張交易單位、階梯成本等古典方法真正困難的設定（見[文獻回顧](docs/literature-review.md)第 8 節）。
 
 ## 限制
 
@@ -142,7 +137,7 @@ $$
 * **樣本小、市場單一**：只有 5 季，且全部落在台股的強勁多頭（0050 +128%）；沒有任何統計檢定能在這個樣本下區分 beta 與 alpha。
 * **預期報酬近乎雜訊**：MSRP 的結論高度依賴 μ 的品質；更好的預測模型可能改變排序。
 * **QUBO 的 MSRP 是近似**：以 γ 網格掃描效率前緣，與直接最大化 Sharpe 不完全相同。
-* **超參數**：penalty 依第一季的事前目標函數選定；sweeps／reads 沿用原始設定。
+* **超參數**：penalty 依第一季的事前目標函數選定；sweeps／reads 未系統調整（僅於敏感度實驗中測試）。
 
 ## 重現
 
@@ -179,9 +174,7 @@ repo 已附上所有中間結果（`results/`），可直接開啟 notebooks 查
 ├── docs/
 │   ├── literature-review.md     # 文獻回顧（66 篇參考文獻）
 │   ├── lit-review-search/       # 系統性文獻蒐集紀錄（Crossref 22 本期刊 + arXiv）
-│   ├── original-results.md      # 原始版本與重構版本的差異
-│   └── slides/                  # 期末簡報、量子退火教學簡報
-├── archive/                     # 原始研究 notebook（封存）
+│   └── slides/                  # 研究簡報、量子退火教學簡報
 └── tests/
 ```
 

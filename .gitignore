@@ -1,8 +1,8 @@
-# --- 原始大型資料（只在本機保留；repo 只收錄 data/stocks 與 data/meta） ---
+# --- 完整下載資料（只在本機保留；repo 只收錄 data/stocks 與 data/meta） ---
 data/Adjusted Daily Stock Data/
 data/Other Data/
 
-# --- 原始研究檔（已整理進 archive/ 與 docs/） ---
+# --- 本機工作檔（不納入版控） ---
 /ch6_portfolio_optimization.ipynb
 /lit-review/
 /project-presentation/

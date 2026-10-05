@@ -1,6 +1,6 @@
 # QUBO / Annealing Portfolio Optimization on Taiwan 50 Constituents
 
-[中文版 README](README.md) · [Literature review (zh-TW)](docs/literature-review.md) · [Final presentation (PDF, zh-TW)](docs/slides/Quantum_Annealing_Portfolio_Optimization.pdf)
+[中文版 README](README.md) · [Literature review (zh-TW)](docs/literature-review.md) · [Research presentation (PDF, zh-TW)](docs/slides/Quantum_Annealing_Portfolio_Optimization.pdf)
 
 This is a research project from the AI Quantum Computing Lab, Department of MIS, National Chengchi University (Spring 2026).
 It formulates long-only Markowitz portfolios (minimum variance, GMVP, and maximum Sharpe, MSRP) as QUBOs, the input format of D-Wave quantum annealers, and solves them with annealing.
