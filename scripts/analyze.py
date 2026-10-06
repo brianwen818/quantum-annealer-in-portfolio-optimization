@@ -43,6 +43,7 @@ def main() -> None:
     preds = pd.concat([analysis.load_quarter(cfg, w.quarter)["preds"] for w in schedule])
 
     for fname, fig in {
+        "summary.png": plotting.summary_chart(res["quality_mv"], res["by_method"], res["performance"]),
         "nav_walkforward.png": plotting.nav_chart(res["daily"], prim, schedule),
         "solver_quality.png": plotting.solver_quality_chart(res["quality_mv"]),
         f"weights_{first_q}.png": plotting.weights_chart(W0, prim),
